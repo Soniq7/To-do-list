@@ -12,6 +12,10 @@
     border-bottom: 2px solid #eee;
 }
 
+.task__text {
+    word-break: break-word;
+}
+
 .task__text--done {
     text-decoration: line-through;
 }
