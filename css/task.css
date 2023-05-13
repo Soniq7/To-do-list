@@ -32,7 +32,7 @@
 }
 
 .task__button--remove {
-    background-color: red;
+    background-color: crimson;
 }
 
 .task__button:hover {
