@@ -1,0 +1,16 @@
+.task {
+    list-style: none;
+    padding: 25px;
+}
+
+.task__text--done {
+    text-decoration: line-through;
+}
+
+.task__button--done {
+    background-color: green;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 30px;
+}
