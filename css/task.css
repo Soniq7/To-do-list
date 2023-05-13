@@ -3,14 +3,30 @@
     padding: 25px;
 }
 
+.task__items {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid #eee;
+}
+
 .task__text--done {
     text-decoration: line-through;
 }
 
-.task__button--done {
-    background-color: green;
+.task__button {
     color: white;
     border: none;
     height: 30px;
     width: 30px;
+}
+
+.task__button--done {
+    background-color: green;
+}
+
+.task__button--remove {
+    background-color: red;
 }
