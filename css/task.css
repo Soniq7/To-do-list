@@ -34,3 +34,11 @@
 .task__button--remove {
     background-color: red;
 }
+
+.task__button:hover {
+    cursor: pointer;
+}
+
+.task__button:active {
+    border: 1px solid black;
+}
