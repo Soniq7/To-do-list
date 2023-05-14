@@ -4,7 +4,8 @@ Hi!
 
 Below introducing basic To-do List applicattion, created as per YouCode homework.
 
-[OG Image](https://raw.githubusercontent.com/Soniq7/To-do-list/main/images/og-image.jpg)
+![OG Image](https://raw.githubusercontent.com/Soniq7/To-do-list/main/images/og-image.jpg)
+
 ## Description:
 
 Application is created based on multiply JS arrow functions and simple HTML code.
