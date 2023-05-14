@@ -5,7 +5,7 @@ Hi!
 Below introducing basic To-do List applicattion, created as per YouCode homework.
 
 
-##Description:
+## Description:
 
 Application is created based on multiply JS arrow functions and simple HTML code.
 Allows to create basic to-do list by adding tasks in the taks field and by pressing "Dodaj zadanie" (Add task) button - this will than create to-do list displayed below in "Lista zadań" (Task list) field.
