@@ -16,6 +16,8 @@ It also allows to mark each task as **done** or to **remove** task from to-do li
 
 By clicking on green button, this will strike-through task text and mark green button as ticked. To remove any required task from to-do list, user can choose red button marked with bin.
 
+![Presentation](https://github.com/Soniq7/To-do-list/blob/main/images/presentation.gif?raw=true)
+
 ### **Note:** 
 Refreshing page will remove all recently added tasks and return page to start point - application is still being worked on.
 
