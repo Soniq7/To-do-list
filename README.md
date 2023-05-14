@@ -19,5 +19,19 @@ By clicking on green button, this will strike-through task text and mark green b
 ### **Note:** 
 Refreshing page will remove all recently added tasks and return page to start point - application is still being worked on.
 
-## Demo:
+## Programming languages used:
+
+- HTML
+- CSS
+- JS (JavaScript)
+- Markdown
+
+## Techlonolgy used:
+
+- CSS box model, box-sizing, normalize.css, font-family, grid template, text decoration, border and background color styling: / buttons / form / fonts / sections / task etc., responsivity and media queries.
+- BEM convention
+- ES6+ features
+- JS Arrow functions, table, stirngs, render, toggle, splice, bindEvents, onFormSubmit, addEvenetListiner, init function
+
+# Demo:
 https://soniq7.github.io/To-do-list/
