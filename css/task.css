@@ -27,16 +27,16 @@
     width: 30px;
 }
 
-.task__button--done {
+.task__button--toggleDone {
     background-color: hsl(120, 100%, 25%);
 }
 
-.task__button--done:hover {
+.task__button--toggleDone:hover {
     cursor: pointer;
     background: hsl(120, 100%, 30%);
 }
 
-.task__button--done:active {
+.task__button--toggleDone:active {
     border: 1px solid black;
     background: hsl(120, 100%, 40%);
 }
