@@ -28,17 +28,29 @@
 }
 
 .task__button--done {
-    background-color: green;
+    background-color: hsl(120, 100%, 25%);
+}
+
+.task__button--done:hover {
+    cursor: pointer;
+    background: hsl(120, 100%, 30%);
+}
+
+.task__button--done:active {
+    border: 1px solid black;
+    background: hsl(120, 100%, 40%);
 }
 
 .task__button--remove {
-    background-color: crimson;
+    background-color: hsl(348, 83%, 47%);
 }
 
-.task__button:hover {
+.task__button--remove:hover {
     cursor: pointer;
+    background: hsl(348, 83%, 52%);
 }
 
-.task__button:active {
+.task__button--remove:active {
     border: 1px solid black;
+    background: hsl(348, 83%, 57%);
 }
