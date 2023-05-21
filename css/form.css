@@ -21,15 +21,15 @@
 }
 
 .form__button {
-    background-color: teal;
+    background-color: hsl(180, 100%, 25%);
     color: white;
     border: none;
     padding: 5px 10px;
 }
 
 .form__button:hover {
-    background: hsl(180, 100%, 30%)
     cursor: pointer;
+    background: hsl(180, 99%, 30%)
 }
 
 .form__button:active {
