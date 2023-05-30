@@ -26,6 +26,7 @@
     border: none;
     height: 30px;
     width: 30px;
+    transition: 1s;
 }
 
 .task__button--toggleDone {
@@ -48,10 +49,10 @@
 
 .task__button--remove:hover {
     cursor: pointer;
-    background: hsl(348, 83%, 52%);
+    background: hsl(348, 83%, 57%);
 }
 
 .task__button--remove:active {
     border: 1px solid black;
-    background: hsl(348, 83%, 57%);
+    background: hsl(348, 83%, 62%);
 }
