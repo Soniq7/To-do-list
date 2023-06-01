@@ -1,6 +1,6 @@
 {
   let tasks = [];
-  let hideTasksDone = false;
+  let hideDoneTasks = false;
 
   
 
@@ -80,7 +80,23 @@
     document.querySelector(".js-tasks").innerHTML = htmlString;
   };
 
-  const renderButtons = () => {};
+  const renderButtons = () => {
+    const headerButtons = document.querySelector(".js-headerButtons");
+
+    if (!tasks.lenght) {
+      headerButtons.innerHTML = "";
+      return;
+    };
+
+    headerButtons.innerHTML = `
+      <button class="section__headerButtons js-toggleHideDone">
+        ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+        </button>
+        <button class="section__headerButtons js-markAllDone"
+        ${ tasks.every(({ done }) => done) ? " disabled " : ""}>
+        Ukończ wszystkie
+        </button>`
+  };
 
   const render = () => {
       renderTasks();
