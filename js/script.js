@@ -1,6 +1,6 @@
 {
   let tasks = [];
-  let hideDoneTasks = false;
+  let hideTasksDone = false;
 
   
 
@@ -26,9 +26,20 @@
     render();
   };
 
+  const markAllTasksDone = () => {
+    tasks = tasks.map((task) => ({
+      ...task,
+      done: true,
+    }));
+  };
 
+  const toggleHideDoneTasks = () => {
+    hideDoneTasks = !hideDoneTasks;
+    
+    render();
+  };
 
-  bindEvents = () => {
+  bindButtonsEvents = () => {
     const removeButtons = document.querySelectorAll(".js-remove");
 
     removeButtons.forEach((removeButton, index) => {
@@ -66,17 +77,13 @@
 
   const renderButtons = () => {};
 
-  const bindButtonsEvents = () => {};
-
-
   const render = () => {
       renderTasks();
       renderButtons();
 
-      bindEvents();
       bindButtonsEvents();
   };
-
+  
   const onFormSubmit = (event) => {
     event.preventDefault();
 
