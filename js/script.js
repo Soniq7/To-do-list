@@ -41,7 +41,7 @@
     render();
   };
 
-  bindRemoveEvents = () => {
+  const bindRemoveEvents = () => {
     const removeButtons = document.querySelectorAll(".js-remove");
 
     removeButtons.forEach((removeButton, index) => {
@@ -49,7 +49,9 @@
         removeTask(index);
       });
     });
+  };
 
+  const bindToggleDoneButtons = () => {
     const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
 
     toggleDoneButtons.forEach((toggleDoneButton, index) => {
@@ -58,13 +60,14 @@
       });
     });
   };
+  
 
   const renderTasks = () => {
     let htmlString = "";
 
     for (const task of tasks)
       htmlString += 
-    `<li class="task__items">
+    `<li class="task__item${task.done && hideDoneTasks ? " tasks__item--hidden" : ""}">
         <button class="task__button task__button--toggleDone js-toggleDone">
           ${task.done ? "✓" : ""}
         </button>
@@ -84,6 +87,7 @@
       renderButtons();
 
       bindRemoveEvents();
+      bindToggleDoneButtons();
   };
 
   const onFormSubmit = (event) => {
@@ -94,7 +98,7 @@
 
     if (newTaskContent !== "") {
       addNewTask(newTaskContent);
-    }
+    };
 
     newTaskInput.value = "";
     newTaskInput.focus();
