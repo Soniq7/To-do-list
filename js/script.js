@@ -1,29 +1,29 @@
 {
   let tasks = [];
 
-
+  
 
   const addNewTask = (newTaskContent) => {
-    tasks = [
-      ...tasks,
-      { content: newTaskContent },
-    ];
-
-    render();
-    };
-
-
-    const removeTask = (taskIndex) => {
-      tasks = tasks.filter((task, index) => index !== taskIndex);
-  
-      render();
-    };
-
-  const toggleTaskDone = (taskIndex) => {
-    tasks = tasks.map((task, index) => index === taskIndex ? { ...task, done: !task.done } : task);
+    tasks = [...tasks, { content: newTaskContent, done: false }];
 
     render();
   };
+
+  const removeTask = (taskIndex) => {
+    tasks = tasks.filter((task, index) => index !== taskIndex);
+
+    render();
+  };
+
+  const toggleTaskDone = (taskIndex) => {
+    tasks = tasks.map((task, index) =>
+      index === taskIndex ? { ...task, done: !task.done } : task
+    );
+
+    render();
+  };
+
+
 
   bindEvents = () => {
     const removeButtons = document.querySelectorAll(".js-remove");
