@@ -60,7 +60,8 @@
       });
     });
   };
-  
+
+  const bindButtonEvents = () => {};
 
   const renderTasks = () => {
     let htmlString = "";
@@ -95,7 +96,7 @@
         <button class="section__headerButtons js-markAllDone"
         ${ tasks.every(({ done }) => done) ? " disabled " : ""}>
         Ukończ wszystkie
-        </button>`
+        </button>`;
   };
 
   const render = () => {
@@ -104,6 +105,7 @@
 
       bindRemoveEvents();
       bindToggleDoneButtons();
+      bindButtonEvents();
   };
 
   const onFormSubmit = (event) => {
