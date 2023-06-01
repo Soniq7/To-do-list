@@ -43,12 +43,12 @@
     });
   };
 
-  const render = () => {
+  const renderTasks = () => {
     let htmlString = "";
 
     for (const task of tasks)
-      htmlString += `
-    <li class="task__items">
+      htmlString += 
+    `<li class="task__items">
         <button class="task__button task__button--toggleDone js-toggleDone">
           ${task.done ? "✓" : ""}
         </button>
@@ -56,12 +56,19 @@
           ${task.content}
         </span>
         <button class="task__button task__button--remove js-remove">🗑</button>
-    </li>
-`;
+    </li>`;
 
     document.querySelector(".js-tasks").innerHTML = htmlString;
+  };
 
-    bindEvents();
+  const renderButtons = () => {};
+
+
+  const render = () => {
+      renderTasks();
+      renderButtons();
+
+      bindEvents();
   };
 
   const onFormSubmit = (event) => {
