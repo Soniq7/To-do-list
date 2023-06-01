@@ -62,17 +62,34 @@
   };
 
   const bindButtonEvents = () => {
-    const markAllDoneButton = docuemt.querySelector(".js-markAllDone");
+    const markAllDoneButton = document.querySelector(".js-markAllDone");
 
     if (markAllDoneButton) {
       markAllDoneButton.addEventListener("click", markAllTasksDone);
-    };
+    }
 
     const toggleHideDoneButton = document.querySelector(".js-toggleHideDone");
 
     if (toggleHideDoneButton) {
       toggleHideDoneButton.addEventListener("click", toggleHideDoneTasks);
-    };
+    }
+  };
+
+  const renderButtons = () => {
+    const buttonsElement = document.querySelector(".js-headerButtons");
+
+    if (!tasks.length) {
+      buttonsElement.innerHTML = "";
+      return;
+    }
+
+    buttonsElement.innerHTML = `
+      <button class="section__headerButtons js-toggleHideDone">
+        ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+      </button>
+      <button class="section__headerButtons js-markAllDone"
+        ${ tasks.every(({ done }) => done) ? " disabled " : ""}> Ukończ wszystkie
+      </button>`;
   };
 
   const renderTasks = () => {
@@ -80,7 +97,7 @@
 
     for (const task of tasks)
       htmlString += 
-    `<li class="task__item${task.done && hideDoneTasks ? " tasks__item--hidden" : ""}">
+    `<li class="task__item${task.done && hideDoneTasks ? " tasks__item--hidden" : ""} js-tasks">
         <button class="task__button task__button--toggleDone js-toggleDone">
           ${task.done ? "✓" : ""}
         </button>
@@ -91,23 +108,6 @@
     </li>`;
 
     document.querySelector(".js-tasks").innerHTML = htmlString;
-  };
-
-  const renderButtons = () => {
-    const headerButtons = document.querySelector(".js-headerButtons");
-
-    if (!tasks.lenght) {
-      headerButtons.innerHTML = "";
-      return;
-    };
-
-    headerButtons.innerHTML = `
-      <button class="section__headerButtons js-toggleHideDone">
-        ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
-      </button>
-      <button class="section__headerButtons js-markAllDone"
-        ${ tasks.every(({ done }) => done) ? " disabled " : ""}> Ukończ wszystkie
-      </button>`;
   };
 
   const render = () => {
