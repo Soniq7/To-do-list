@@ -5,7 +5,7 @@
   
 
   const addNewTask = (newTaskContent) => {
-    tasks = [...tasks, { content: newTaskContent, done: false }];
+    tasks = [...tasks, { content: newTaskContent }];
 
     render();
   };
