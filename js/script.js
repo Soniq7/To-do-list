@@ -31,6 +31,8 @@
       ...task,
       done: true,
     }));
+
+    render();
   };
 
   const toggleHideDoneTasks = () => {
@@ -39,7 +41,7 @@
     render();
   };
 
-  bindButtonsEvents = () => {
+  bindRemoveEvents = () => {
     const removeButtons = document.querySelectorAll(".js-remove");
 
     removeButtons.forEach((removeButton, index) => {
@@ -81,9 +83,9 @@
       renderTasks();
       renderButtons();
 
-      bindButtonsEvents();
+      bindRemoveEvents();
   };
-  
+
   const onFormSubmit = (event) => {
     event.preventDefault();
 
