@@ -5,9 +5,50 @@
 }
 
 .section__title {
-    border-bottom: 2px solid #ddd;
     margin: 0;
+}
+
+.section__header {
+    border-bottom: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     padding: 20px;
+}
+
+@media(max-width: 767px) {
+    .section__header {
+        grid-template-columns: 1fr;
+    }
+}
+
+.section__headerButtons {
+    display: flex;
+    flex-wrap: wrap;
+    background: transparent;
+    border: none;
+    color: teal;
+    margin: 0 0 0 20px;
+    transition: color 0.5s;
+}
+
+@media(max-width: 767px) {
+    .section__headerButtons {
+        flex-basis: 100%;
+        justify-content: center;
+        margin: 10px;
+    }
+}
+
+.section__headerButtons:hover {
+    color: hsl(180, 100%, 35%);
+    cursor: pointer;
+}
+
+.section__headerButtons:disabled {
+    color: #ccc;
 }
 
 .section__body {
