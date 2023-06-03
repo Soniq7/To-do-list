@@ -16,6 +16,12 @@ It also allows to mark each task as **done** or to **remove** task from to-do li
 
 Clicking on green button will ~~strike-through~~ task text and mark green button as "✔" ticked. To remove any required task from to-do list, user can choose red button marked with "🗑" trash bin.
 
+There are two new buttons added: *"Ukryj ukończone"* (Hide Completed) and *"Zakończ wszystko"* (Complete all).  
+
+- *Ukryj ukończone* button - function of this button is toggle between hide or to show done tasks. Depending on the current task list state, the button changes its name to "Ukryj" (hide) or "Pokaż ukończone" (show completed).
+
+- *"Zakończ wszystko"* - its function is to complete all tasks, and once this is done button becomes disabled.
+
 ![Presentation](https://github.com/Soniq7/To-do-list/blob/main/images/presentation.gif?raw=true)
 
 ### **Note:** 
@@ -30,9 +36,10 @@ Refreshing the page will remove all recently added tasks and page will return to
 
 ## Techlonolgy used:
 
-- CSS box model, box-sizing, normalize.css, font-family, grid template, text decoration, border and background color styling: / buttons / form / fonts / sections / task etc., responsivity and media queries.
+- CSS box model, box-sizing, normalize.css, font-family, grid template, text decoration, border and background color styling: / buttons / form / fonts / sections / task etc., responsivity and media queries
 - BEM convention
 - ES6+ features
+- Immutability concept
 - JS Arrow functions, table, stirngs, render, toggle, splice, bindEvents, onFormSubmit, addEvenetListiner, init function
 
 # Demo:
