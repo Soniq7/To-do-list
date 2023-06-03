@@ -22,7 +22,7 @@ There are two new buttons added: *"Ukryj ukończone"* (Hide Completed) and *"Zak
 
 - *"Zakończ wszystko"* - its function is to complete all tasks, and once this is done button becomes disabled.
 
-![Presentation](https://github.com/Soniq7/To-do-list/blob/main/images/presentation.gif?raw=true)
+![Presentation](https://github.com/Soniq7/To-do-list/blob/main/images/presentation2.gif?raw=true)
 
 ### **Note:** 
 Refreshing the page will remove all recently added tasks and page will return to the starting point - this application is still being worked on.
