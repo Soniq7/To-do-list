@@ -18,7 +18,7 @@ Clicking on green button will ~~strike-through~~ task text and mark green button
 
 There are two new buttons added: *"Ukryj ukończone"* (Hide Completed) and *"Zakończ wszystko"* (Complete all).  
 
-- *Ukryj ukończone* button - function of this button is toggle between hide or to show done tasks. Depending on the current task list state, the button changes its name to "Ukryj" (hide) or "Pokaż ukończone" (show completed).
+- *Ukryj ukończone* button - function of this button is to toggle between hide or to show done tasks. Depending on the current task list state, the button changes its name to "Ukryj" (hide) or to "Pokaż ukończone" (show completed).
 
 - *"Zakończ wszystko"* - its function is to complete all tasks, and once this is done button becomes disabled.
 
